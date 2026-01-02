@@ -2,9 +2,9 @@ import nbt
 import array
 
 #Loads the map.dat file, which must be numbered 777 and in the python main directory
-mappath = raw_input("Please type the full filename path of the map.dat file you wish to convert\n")
+mappath = raw_input("/Users/n.overchenko/Downloads/la-scala-theatre-of-milan-ispired-heliopolis-v-01-2-2016-sch.zip")
 mapfile = nbt.NBTFile(mappath, 'rb')
-schematicpath = raw_input("\nPlease type the full filename path of the schematic file you wish to create\nThe file name must end in \".schematic\"\nSaving directly to the C drive requires administrator privileges\n")
+schematicpath = raw_input("/Users/n.overchenko/Downloads/MNE-lascala.schematic")
 print
 
 blocksBytes = mapfile['data']['colors'].value
